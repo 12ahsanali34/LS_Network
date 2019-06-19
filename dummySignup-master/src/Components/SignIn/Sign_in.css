@@ -1,0 +1,77 @@
+.header {
+  background-color: #090a1e;
+  height: 11%;
+  width: 100%;
+  }
+.navBar {
+  background: linear-gradient(to right, #011cb3, #003af0);
+  height: 20%;
+  width: 100%;
+}
+.mainBody {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+.footer {
+  background-color: #0b172b;
+  height: 10%;
+  width: 100%;
+  line-height: 70px;
+  border-top: 1px solid gray;
+  color: #435470;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1056px) {
+  .header {
+    background-color: lightblue;
+  }
+  .imageClass {
+    display: none !important;
+  }
+  .formClass {
+    width:'100%'
+  }
+}
+
+.textInputSunDiv {
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.textInputStyle {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 8%;
+  color: '#000'
+}
+
+@media only screen and (max-width: 1056px) {
+
+  .imageClass {
+    display: none !important;
+    width:'0%'
+  }
+  .formClass {
+    width:'100%'
+  }
+}
+
+@media only screen and (min-width: 1056px) {
+  .imageClass {
+    display: flex;
+    width:'50%'
+  }
+  .formClass {
+    width:'50%'
+  }
+}
+
