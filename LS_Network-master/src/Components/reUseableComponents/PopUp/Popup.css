@@ -1,0 +1,68 @@
+.PopUp {
+    width:45%;
+    height:55%;
+    background:#fff;
+    align-Self:center;
+    border-radius: 5px;
+}
+.FirstRow{
+    width: 100%;
+    height: 30%;
+    /* background: green; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.SecondRow{
+    width: 100%;
+    height: 10%;
+    /* background: yellow; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ThirdRow{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ForthRow{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ForthSubDiv{
+    background: #fff;
+    width: 35px;
+    height: 100%;
+    margin-right: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+}
+.ForthSubDivTextInput{
+    width: 80%;
+    height: 80%;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
+    border: none
+}
+.FifthDiv{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

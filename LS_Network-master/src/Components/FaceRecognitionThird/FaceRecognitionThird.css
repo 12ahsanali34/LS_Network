@@ -1,0 +1,57 @@
+#background {
+  background : #fff;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  }
+  #centerCircle {
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    background: #ccc;
+  }
+  #cameraIcon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 467px;
+    background: red;
+  }
+  #textDiv {
+    align-self: center;
+    width: 490px;
+    height: 120px;
+    position: absolute;
+    top: 470px;
+    display: block;
+  }
+  #headingStyle {
+    text-align: center;
+    color: #565454;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #peragraphStyle {
+    text-align: center;
+    color: #565454;
+  }
+  #buttom {
+    align-self: center;
+    width: 138px;
+    height: 44px;
+    position: absolute;
+    top: 620px;
+    display: block;
+    border: #0082f0cc;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+  }
+  #buttonText {
+    text-align: center;
+    color: #0082f0cc;
+    font-weight: bold;
+  }
