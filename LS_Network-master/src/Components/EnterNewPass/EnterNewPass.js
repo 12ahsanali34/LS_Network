@@ -1,8 +1,9 @@
 import React from 'react';
 import Sign_in_image from '../../Images/sign-in-girl.png';
 import Popup from '../reUseableComponents/PopUp/PopUp';
-import './Sign_in.css';
+import './EnterNewPass.css';
 import { Link } from 'react-router-dom';
+import EYE_ICON from '../../Images/eyeIcon.png';
 export default class Sign_in extends React.Component {
     constructor(props){
       super(props);
@@ -65,44 +66,43 @@ export default class Sign_in extends React.Component {
       return (
           <div style={{height:this.state.fullWindowHeight}}>
                 {this.state.showPopup && <Popup close={this.closePopup}/>}
-                <div className="mainBodySignIn">
-                    <div className="imageClassSignIn" style={{height:'100%',width:'100%',overflow:'hidden'}}>
+                <div className="mainBodyEnterNewPass">
+                    <div className="imageClassEnterNewPass" style={{height:'100%',width:'100%',overflow:'hidden'}}>
                         <img style={{width:'100%',height:'100%',display:'block'}} src={Sign_in_image} alt="Logo" />
                     </div>
-                    <div className="formClassSignIn" style={{width:'100%',height:'100%',background:'#fff'}}>
-                      <div className="textInputSubDivSignIn">
+                    <div className="formClassEnterNewPass" style={{width:'100%',height:'100%',background:'#fff'}}>
+                      <div className="textInputSubDivEnterNewPass">
                        <div style={{width:'50%',alignItems:'center',justifyContent:'center',display:'block'}}>
-                            <h1 style={{margin:'0px 0px 10px 0px'}}>Sign in Now</h1>
-                            <p style={{margin:'3px 0px 15px 0px',color:'gray'}}>Welcome back, Please login to your account.</p>
-                          <div className="textInputStyleSignIn">
+                            
+                            <h1 style={{margin:'0px 0px 10px 0px'}}>Reset your Password</h1>
+                            <p style={{margin:'3px 0px 15px 0px',color:'gray'}}>Get back to your account.</p>
+                            
+                          <div className="textInputStyleEnterNewPass">
                               <input ref={el => this.inputemail = el} onChange={(text)=>{
                                     this.setState({email:text.target.value})
                                     console.log(this.state.email)
-                                  }} style={{width:'95%',height:'95%',border:'none'}} type="text" name="title" placeholder="Enter your password" />
+                                  }} style={{width:'80%',height:'95%',border:'none'}} type="text" name="title" placeholder="Type your password" />
+                                <img style={{width:'20px',height:'20px',display:'block'}} src={EYE_ICON} alt="Logo" />
                            </div>
 
-                           <div className="textInputStyle2SignIn">
+                           <div className="textInputStyle2EnterNewPass">
                               <input ref={el => this.inputpassword = el} onChange={(text)=>{
                                   this.setState({password:text.target.value})
                                   console.log(this.state.password)
-                                }} style={{width:'95%',height:'95%',border:'none'}} type="password" name="title" placeholder="Password" />
+                                }} style={{width:'80%',height:'95%',border:'none'}} type="text" name="title" placeholder="Re-type your password" />
+                                <img style={{width:'20px',height:'20px',display:'block'}} src={EYE_ICON} alt="Logo" />
                            </div>                         
                          
-                          <div className="RememberMeDivSignIn">
-                              <span style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                                <input style={{margin:"2px 5px 0px 0px"}} type="checkbox"/>
-                                <p style={{fontSize:12,color:'gray'}}>Remember me</p>
-                              </span>
-                              <Link style={{ textDecoration: 'none' }} to="/ForgetPass"><p style={{fontSize:12,color:'gray'}}>Forget Password?</p></Link>
+                          <div className="TEXT_DIVEnterNewPass">
+                             <p className="TEXTEnterNewPass">
+                                Use a password that has at least 8 characters, use at least one number, one uppercase letter, one lowercase letter and one special symbol.
+                             </p>
                           </div>
 
 
                           <div style={{width:'100%',height:'50px',alignItems:'center',display:'flex'}}>
-                            <div onClick={this.sign_inHanhdler} className="button1SignIn">
-                              <p className="buttonText1SignIn">SIGN IN</p>
-                            </div>
-                            <div onClick={this.resetFields} className="button2SignIn">
-                              <p className="buttonText2SignIn">RESET</p>
+                            <div className="button1EnterNewPass">
+                              <Link style={{ textDecoration: 'none' }} to="/PassChangeSuccess"><p className="buttonText1EnterNewPass">NEXT</p></Link>
                             </div>
                           </div>
                        </div>

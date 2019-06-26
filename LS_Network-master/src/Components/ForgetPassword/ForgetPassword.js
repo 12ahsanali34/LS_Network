@@ -34,18 +34,18 @@ export default class Sign_in extends React.Component {
       return (
           <div style={{height:this.state.fullWindowHeight}}>
                 {this.state.showPopup && <Popup close={this.closePopup}/>}
-                <div className="mainBody">
-                    <div className="imageClass" style={{height:'100%',width:'100%',overflow:'hidden'}}>
+                <div className="mainBodyForgetPassword">
+                    <div className="imageClassForgetPassword" style={{height:'100%',width:'100%',overflow:'hidden'}}>
                         <img style={{width:'100%',height:'100%',display:'block'}} src={Sign_in_image} alt="Logo" />
                     </div>
-                    <div className="formClass" style={{width:'100%',height:'100%',background:'#fff'}}>
-                      <div className="textInputSubDiv">
+                    <div className="formClassForgetPassword" style={{width:'100%',height:'100%',background:'#fff'}}>
+                      <div className="textInputSubDivForgetPassword">
                        <div style={{width:'50%',alignItems:'center',justifyContent:'center',display:'block'}}>
                             
                             <h1 style={{margin:'0px 0px 10px 0px'}}>Reset your Password</h1>
                             <p style={{margin:'3px 0px 15px 0px',color:'gray'}}>Enter the last password you remember</p>
                             
-                           <div className="textInputStyle">
+                           <div className="textInputStyleForgetPassword">
                               <input ref={el => this.inputpass = el} onChange={(text)=>{
                                     this.setState({password:text.target.value})
                                     console.log(this.state.password)
@@ -54,11 +54,11 @@ export default class Sign_in extends React.Component {
                                 <img onClick={this.ShowPassword} style={{width:'20px',height:'20px',display:'block'}} src={EYE_ICON} alt="Logo" />
                            </div> 
                           <div style={{width:'100%',height:'50px',alignItems:'center',display:'flex'}}>
-                            <div className="button1">
-                                <Link style={{ textDecoration: 'none' }} to="/"><p id="buttonText2">NEXT</p></Link>
+                            <div className="button1ForgetPassword">
+                                <Link style={{ textDecoration: 'none' }} to="/ResetPass"><p className="buttonText1ForgetPassword">NEXT</p></Link>
                             </div>
-                            <div id="button2">
-                              <Link style={{ textDecoration: 'none' }} to="/"><p id="buttonText2">Skip</p></Link>
+                            <div className="button2ForgetPassword">
+                              <Link style={{ textDecoration: 'none' }} to="/"><p className="buttonText2ForgetPassword">Skip</p></Link>
                             </div>
                           </div>
                        </div>

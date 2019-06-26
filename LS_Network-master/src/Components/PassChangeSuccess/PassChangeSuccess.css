@@ -1,0 +1,64 @@
+.backgroundEnterNewPass {
+  background : #fff;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  }
+  .centerCircleEnterNewPass {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: #e6fbf2;
+  }
+  .cameraIconEnterNewPass {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 467px;
+    background: red;
+  }
+ .textDivEnterNewPass {
+    align-self: center;
+    width: 490px;
+    height: 120px;
+    position: absolute;
+    top: 380px;
+    display: block;
+  }
+  .headingStyleEnterNewPass {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+  }
+  .peragraphStyleEnterNewPass {
+    text-align: center;
+    color: #565454;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .buttomEnterNewPass {
+    align-self: center;
+    width: 138px;
+    height: 44px;
+    position: absolute;
+    top: 506px;
+    display: block;
+    border: #0082f0cc;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+  }
+  .buttonTextEnterNewPass {
+    text-align: center;
+    color: #0082f0cc;
+    font-weight: bold;
+    font-size: 14px;
+  }
